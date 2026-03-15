@@ -14,6 +14,7 @@ A web-based learning and assessment platform designed to help learners prepare f
 - Learners can explore structured study materials related to RTO rules, traffic signs, and safe driving practices, and then evaluate their understanding through quizzes. The platform also provides an administrative dashboard that enables content management and user monitoring.
 
 - The primary goal of this project is to simplify driving test preparation while improving awareness of road safety and traffic regulations.
+  
 
 ## 🎯 Key Objectives
 
@@ -27,6 +28,8 @@ A web-based learning and assessment platform designed to help learners prepare f
 
 - Provide centralized content management for administrators
 
+  
+
 ## ✨ Features
 ### 📚 Study Materials
 
@@ -36,6 +39,7 @@ A web-based learning and assessment platform designed to help learners prepare f
 
 - Organized learning modules for better comprehension
 
+
 ## 🚦 Traffic Signs Learning Module
 
 - Detailed explanations of traffic signs and symbols
@@ -43,6 +47,7 @@ A web-based learning and assessment platform designed to help learners prepare f
 - Visual learning support to help users identify road signs quickly
 
 - Improves real-world driving awareness
+
 
 ## 📝 Interactive Quizzes
 
@@ -52,6 +57,7 @@ A web-based learning and assessment platform designed to help learners prepare f
 
 - Immediate feedback to help learners understand mistakes
 
+
 ## 👤 User-Friendly Interface
 
 - Simple and intuitive UI for seamless navigation
@@ -59,6 +65,7 @@ A web-based learning and assessment platform designed to help learners prepare f
 - Accessible learning environment for beginners
 
 - Responsive layout for smooth interaction
+
 
 ## ⚙️ Admin Management System
 
@@ -72,6 +79,7 @@ The admin panel allows administrators to:
 
 - Maintain platform content efficiently
 
+
 ## 🧰 Technology Stack
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
@@ -81,7 +89,7 @@ The admin panel allows administrators to:
 ![CSS](https://img.shields.io/badge/CSS-Styling-purple)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Interactive-yellow)
 
-``` 
+
 | Category   | Technology                  |
 |------------|-----------------------------|
 | Backend    | Python                      |
@@ -90,19 +98,23 @@ The admin panel allows administrators to:
 | Database   | MySQL                       |
 | Server     | Django Development Server   |
 
-```
+
+
 
 ## 🏗 System Architecture
 
 - The project follows the Model-View-Template (MVT) architecture used by Django.
 
+
 ### Model
 
 - Handles database structure and data management using Django ORM and MySQL.
 
+
 ### View
 
 - Processes user requests, business logic, and communication between models and templates.
+
 
 ### Template
 
@@ -114,12 +126,14 @@ The admin panel allows administrators to:
 
 Follow these steps to run the project locally.
 
+
 ### 1️⃣ Clone the Repository
 
 ```
 git clone https://github.com/yourusername/driver-skill-assessment-system.git
 cd driver-skill-assessment-system
 ```
+
 ### 2️⃣ Create Virtual Environment
 ```
 python -m venv venv
@@ -164,6 +178,8 @@ DATABASES = {
 }
 
 ```
+
+
 ### 6️⃣ Apply Database Migrations
 
 ```
@@ -173,10 +189,13 @@ python manage.py migrate
 ```
 
 ### 7️⃣ Create Superuser
+
+
 ```
 python manage.py createsuperuser
 ```
 This allows access to the Django Admin Panel.
+
 
 ### 8️⃣ Run Development Server
 ```
@@ -191,6 +210,7 @@ Admin dashboard:
 http://127.0.0.1:8000/admin
 
 ```
+
 
 ## 📂 Project Structure
 
@@ -221,6 +241,8 @@ driver-skill-assessment-system/
 └── requirements.txt            # Python dependencies
 
 ```
+
+
 ## 📸 Screenshots
 
 <img src="Screenshots/Image2.png" width="800">
@@ -242,6 +264,7 @@ The following improvements can enhance the system further:
 - Integration with official RTO learning resources
 
 - Real-time practice exam simulations
+
 
 ## 📈 Potential Use Cases
 
