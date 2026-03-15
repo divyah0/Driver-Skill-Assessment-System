@@ -246,6 +246,8 @@ driver-skill-assessment-system/
 ## 📸 Screenshots
 
 <img src="Screenshots/Image2.png" width="800">
+<img src="Screenshots/admin.png" >
+<img src="Screenshots/quize.png" >
 
 ## 🚀 Future Improvements
 
