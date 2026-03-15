@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Correct Answers</h2>
+    <ul class="list-group">
+        {% for question in questions %}
+        <li class="list-group-item">
+            <h5>Question {{ forloop.counter }}</h5>
+            <p>{{ question.text }}</p>
+            <p><strong>Correct Answer:</strong> {{ question.correct_option }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="{% url 'quiz' %}" class="btn btn-primary">Back to Quiz</a>
+</div>
+{% endblock %}

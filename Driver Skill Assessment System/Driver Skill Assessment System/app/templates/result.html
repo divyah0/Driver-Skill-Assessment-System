@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    {% if score >= 70 %}
+    <div class="alert alert-success text-center" role="alert">
+        <h4 class="alert-heading">Congratulations!</h4>
+        <p>Your score: {{ score }}%</p>
+        <hr>
+        <p class="mb-0">You have passed the quiz.</p>
+        <a href="{% url 'certificate' %}" class="btn btn-primary mt-3">View Certificate</a>
+        <a href="{% url 'view_correct_answers' %}" class="btn btn-info mt-3">View Correct Answers</a>
+    </div>
+    {% else %}
+    <div class="alert alert-danger text-center" role="alert">
+        <h4 class="alert-heading">Quiz Result</h4>
+        <p>Your score: {{ score }}%</p>
+        <hr>
+        <p class="mb-0">Your score is below 70%. Please retake the quiz.</p>
+        <a href="{% url 'quiz' %}" class="btn btn-primary mt-3">Retake Quiz</a>
+        <a href="{% url 'view_correct_answers' %}" class="btn btn-info mt-3">View Correct Answers</a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

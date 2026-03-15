@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card text-center">
+                <div class="card-header bg-primary text-white">
+                    <h3>Certificate of Completion</h3>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">This certifies that</h4>
+                    <h2 class="card-title">{{ request.user }}</h2>
+                    <p class="card-text">has successfully completed the</p>
+                    <h4 class="card-title">Indian Driving License Written Test</h4>
+                    <p class="card-text">with a score of {{ score }}%</p>
+                    <p class="card-text">Date: {{ date }}</p>
+                </div>
+                <div class="card-footer bg-primary">
+                    <a href="#" id="print-button" class="btn btn-light">Print Certificate</a>
+                    <a href="{% url 'quiz' %}" class="btn btn-light">Back to Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('print-button').onclick = function() {
+        window.print();
+    };
+</script>
+{% endblock %}

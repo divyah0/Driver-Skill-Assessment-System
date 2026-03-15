@@ -1,0 +1,68 @@
+<!-- home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center bg-primary text-white">
+    <h1>Welcome to the Quiz App</h1>
+    <p>Test your knowledge and earn certificates!</p>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">
+                    <h3 class="mb-0">Learn About Indian Traffic Rules</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">India has a complex traffic system influenced by diverse factors including road conditions, cultural practices, and legal frameworks. Understanding Indian traffic rules is crucial for safe and lawful driving.</p>
+                    <a href="{% url 'chapters' %}" class="btn btn-success">Start Learning</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header bg-warning text-white">
+                    <h3 class="mb-0">Chapters to Learn</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">Chapter 1: Road Signs and Signals</li>
+                        <li class="list-group-item">Chapter 2: Traffic Violations and Penalties</li>
+                        <li class="list-group-item">Chapter 3: Defensive Driving Techniques</li>
+                        <li class="list-group-item">Chapter 4: Traffic Control Devices</li>
+                    </ul>
+                    <a href="#" class="btn btn-warning mt-3">Explore Chapters</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header bg-info text-white">
+                    <h3 class="mb-0">Take a Quiz</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Test your knowledge with quizzes covering various aspects of Indian traffic rules. Earn certificates upon successful completion!</p>
+                    <a href="{% url 'quiz' %}" class="btn btn-info">Start Quiz</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header bg-danger text-white">
+                    <h3 class="mb-0">Traffic and Driving License History</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">India's driving license history traces back to the early 20th century, evolving through various regulations and technological advancements. Explore the journey of driving licenses in India.</p>
+                    <a href="{% url 'chapters' %}" class="btn btn-danger">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+<!-- chapters.html -->
+{% extends 'base.html' %}
+
+{% block title %}Chapters{% endblock %}
+
+{% block content %}
+<h2 class="my-4">Chapters</h2>
+<div class="row">
+    {% for chapter in chapters %}
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ chapter.title }}</h5>
+                <p class="card-text">{{ chapter.description }}</p>
+                <a href="{{ chapter.pdf.url }}" class="btn btn-primary">Download PDF</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
