@@ -1,5 +1,10 @@
+<img src="Screenshots/Image1.png" >
+
 # Driver-Skill-Assessment-System
-A web-based learning and assessment platform designed to help learners prepare for driving license tests by studying RTO rules, understanding traffic signs, and practicing through interactive quizzes. The system provides structured learning modules and automated assessments to evaluate users’ knowledge of road safety and traffic regulations
+A web-based learning and assessment platform designed to help learners prepare for driving license tests by studying RTO rules, understanding traffic signs, and practicing through interactive quizzes. The system provides structured learning modules and automated assessments to evaluate users’ knowledge of road safety and traffic regulation
+
+
+
 
 
 ## 📌 Project Overview
@@ -218,21 +223,7 @@ driver-skill-assessment-system/
 ```
 ## 📸 Screenshots
 
-Add screenshots of the system interface here.
-
-Example:
-
-Home Page
-Study Materials Page
-Traffic Signs Module
-Quiz Page
-Quiz Result Page
-Admin Dashboard
-
-Example markdown:
-
-![Home Page](screenshots/home.png)
-![Quiz Page](screenshots/quiz.png)
+<img src="Screenshots/Image2.png" width="800">
 
 ## 🚀 Future Improvements
 
